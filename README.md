@@ -7,7 +7,7 @@ How-To:
 * To remove a user, click the 'X' icon at the top right of a user.
 
 User List:
-![alt tag](https://raw.github.com/dawong/user-list.git/imgs/user-list.png)
+![alt tag](https://github.com/dawong/user-list.git/imgs/user-list.png)
 
 Edit Modal:
-![alt tag](https://raw.github.com/dawong/user-list.git/imgs/edit-modal.png)
+![alt tag](https://github.com/dawong/user-list.git/imgs/edit-modal.png)
