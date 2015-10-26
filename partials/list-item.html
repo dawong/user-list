@@ -1,0 +1,45 @@
+<div ng-class="index%2==0?'even':'odd'" class="row">
+		
+		<div class="col-sm-10">
+			<span class="name-header">{{user.name}}</span>
+			<div><u>Roles</u></div>
+			<ul class="roles-list">
+				<li ng-repeat="role in user.roles">{{role}}</li>
+			</ul>
+		</div>
+		<div class="col-sm-2 nopadding">
+			<span class="pull-right">
+				<a href="" data-toggle="modal" data-target="#editModal{{index}}" ng-click="editUser()"><span title="Edit" class="glyphicon glyphicon-pencil header-icon"></span></a>
+				<a href="" ng-click="removeUser(user, index)"><span title="Delete" class="glyphicon glyphicon-remove header-icon"></span></a>
+			</span>
+		</div>
+		
+		<div class="modal fade" id="editModal{{index}}" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header earnest-blue">
+						<h3 class="modal-title"><strong>Edit User: {{editUserInfo.name}}</strong></h3>
+					</div>
+					<div class="modal-body">
+						<div>
+							<strong>Name: </strong><input ng-model="editUserInfo.name"></input>
+						</div>
+						<div>
+							<strong>Roles:</strong>
+							<ul>
+								<li ng-repeat="role in editUserInfo.roles">
+									<input ng-model="role.value"></input><a href="" ng-click="removeRole(role, $index)"> X</a>
+								</li>
+							</ul>
+							<button ng-click="addRole()">Add Role</button>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary earnest-green" data-dismiss="modal" ng-click="saveUser()">Save</button>
+						<button type="button" class="btn btn-primary earnest-green" data-dismiss="modal">Cancel</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+</div>

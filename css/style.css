@@ -1,0 +1,71 @@
+ul {
+	padding: 0;
+	margin-left: 15px;
+	list-style-position: inside;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.nopadding {
+   padding: 3px !important;
+   margin: 0 !important;
+}
+
+.odd {
+	background-color: white;
+	border: 1px solid black;
+}
+
+.even {
+	background: linear-gradient(-180deg,#38bbb4 0,#37aab6 78%,#33a6a0 100%);
+}
+
+.header-icon {
+	color: black;
+	border: 1px solid black;
+}
+
+.add-button {
+	margin-top: 10px;
+	width: 200px;
+}
+
+.earnest-green {
+	background-color: #19a776;
+}
+
+.earnest-blue {
+	background: linear-gradient(-180deg,#38bbb4 0,#37aab6 78%,#33a6a0 100%);
+}
+
+.name-header {
+	font-size: 32px;
+}
+.name-header li {
+	display: inline-block;
+}
+
+.roles-list {
+	height: 60px;
+	-webkit-column-count: 3;
+	-moz-column-count: 3;
+	column-count: 3;
+	list-style-position: inside;
+}
+
+@media (min-width: 768px) {
+.my-custom-container{
+    width:600px;
+}}
+
+@media (min-width: 992px) {
+.my-custom-container{
+    width:720px;
+}}
+
+@media (min-width: 1200px) {
+.my-custom-container{
+    width:900px;
+}}
